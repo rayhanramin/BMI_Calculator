@@ -1,2 +1,2 @@
-# BMI_Calculator [![Build Status](https://travis-ci.com/rayhanramin/BMI_Calculator.svg?branch=main)
+# BMI_Calculator ![Build Status](https://travis-ci.com/rayhanramin/BMI_Calculator.svg?branch=main)
 A Django project for calculating BMI and checking retirement savings goal 
