@@ -1,0 +1,43 @@
+<head>
+{% load static %}
+<link href="{% static 'tinymce/css/prism.css' %}", rel="stylesheet" >
+
+<style>
+    a:link {
+      color: rgb(14, 204, 14);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: rgb(177, 81, 97);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: rgb(0, 47, 255);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <br><br>
+
+    <h1 style="text-align: center;"> You can calculate you BMI or retirement goal</h1><br>
+    <h3 style="text-align: center;"><a href="/bmi" target="_self"><strong>Calculate BMI</strong></a></h3>
+    <br>
+    <h3 style="text-align: center;"> <a href="/retr" target="_self"><strong>Retirement goal</strong></a>
+    </h3>
+    
+</body>
+
+
+<script src="{% static 'tinymce/js/prism.js' %}"></script>

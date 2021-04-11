@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+
+        </style>
+        
+
+    </head>
+
+
+    <body>
+
+        <h1 style="text-align: center;"> Calculate your BMI here</h1><br><br>
+
+        <h3 style="text-align: center;">
+            <form method="POST">
+                {% csrf_token %}
+                Height in feet : <input type="number" name="feet"> inch: <input type="number" name="inch"><br><br>
+                Weight in lbs:  <input type="number" name="weight"><br><br>
+                <button type="submit">Calculate</button>
+            </form>
+        </h3>
+
+        
+
+        <h2 style="text-align: center;"> {{data}}</h2>
+
+
+        
+        
+        
+        </body>
+</html>
+
+
+
+
+ 
+
+
+
+
+<h3 style="text-align: center;"><a href="{% url 'bmi_cal:homepage' %}"><strong>Exit</strong></a></h3>

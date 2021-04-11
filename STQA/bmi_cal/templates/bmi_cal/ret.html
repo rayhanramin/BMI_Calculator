@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+          .container {
+              width: 500px;
+              clear: both;
+              }
+              
+        .container input {
+            width: 100%;
+            clear: both;
+            }
+
+        </style>
+        
+
+    </head>
+
+
+
+    <body>
+
+        
+        <h2 style="text-align: center;"
+            <div class="container">
+                
+                <form method="POST">
+                    {% csrf_token %}
+                    Age: <input type="number" name="age"> <br><br>
+                    Salary: <input type="number" name='salary'><br><br>
+                    Percentage: <input type="number" name="percent"><br><br>
+                    Target:  <input type="number" name="target"><br><br>
+                    <button type="submit">Check Goal</button><br><br>
+                </form>
+
+                <a href="{% url 'bmi_cal:homepage' %}"><strong>exit</strong></a>
+
+            </div>
+        </h2>
+
+    
+            
+
+        
+
+        <h2 style="text-align: center;"> {{data}}</h2>
+
+        
+    </body>
+    </html>
