@@ -2,8 +2,6 @@ os: linux # => 1
 language: python # => 2
 python: # => 3
   - "3.6"
-  - "3.7"
-  - "3.8"
 env: # => 5
   -DJANGO=3.0 DB=sqlite
 install: # => 6
