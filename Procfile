@@ -1,1 +1,1 @@
-web: gunicorn STQA.wsgi --log-file - 
+web: gunicorn STQA.py --log-file - 
