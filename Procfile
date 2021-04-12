@@ -1,1 +1,1 @@
-web: gunicorn STQA.wsgi
+web: gunicorn STQA.wsgi.application
