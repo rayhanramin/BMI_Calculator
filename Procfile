@@ -1,1 +1,1 @@
-web: gunicorn STQA.wsgi.application
+web: gunicorn --pythonpath STQA STQA.wsgi.application
