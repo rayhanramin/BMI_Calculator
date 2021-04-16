@@ -10,7 +10,7 @@ install: # => 6
 # To run tests
 script:
   - python STQA/manage.py test bmi_cal.tests
-  - coverage run --source=bmi_cal STQA/manage.py test
+  - coverage run --source=bmi_cal STQA/manage.py test bmi_cal/tests/
 # send coverage report to coveralls
 after_success:
   coveralls
