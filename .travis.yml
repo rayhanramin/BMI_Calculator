@@ -6,5 +6,13 @@ env: # => 5
   -DJANGO=3.0 DB=sqlite
 install: # => 6
   - pip install -r requirements.txt
-script: # => 7
+  - pip install coveralls
+# To run tests
+script:
   - python STQA/manage.py test bmi_cal.tests
+  - coverage run --source=bmi_cal manage.py test
+# send coverage report to coveralls
+after_success:
+  coveralls
+  
+
